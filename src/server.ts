@@ -34,13 +34,13 @@ export const server = app.listen(app.get('port'), app.get('host'), () => {
 });
 
 server.on('listening', async function () {
-    await initRedisConnection();
-    await bindAppConnection();
-  });
-  
-  server.on('close', async function () {
-    disconnect();
-    await destroyConnection();
-  });
+  await initRedisConnection();
+  await bindAppConnection();
+});
+
+server.on('close', async function () {
+  disconnect();
+  await destroyConnection();
+});
 
 export default app;
