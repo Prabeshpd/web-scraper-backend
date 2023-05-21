@@ -1,3 +1,13 @@
+# [1.2.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.1.0...web-scraper-backend@1.2.0) (2023-05-21)
+
+
+### Features
+
+* add auth flow for routes ([51912c2](https://github.com/Prabeshpd/web-scraper-backend/commit/51912c2227b497fa1e644811f9a44c59491e86a1))
+* add jwt util for jwt tokens ([75ba96d](https://github.com/Prabeshpd/web-scraper-backend/commit/75ba96d315b6b66df156758f1c0801b232f43e6c))
+* add middlewares for error handling ([2fb34b7](https://github.com/Prabeshpd/web-scraper-backend/commit/2fb34b79e3a697e1fb98f9f9b1c4147eff07c5f4))
+* add setup for test ([7407760](https://github.com/Prabeshpd/web-scraper-backend/commit/7407760ea5e7529a59e244edcb3d1beb14ab3e31))
+
 # [1.1.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.0.0...web-scraper-backend@1.1.0) (2023-05-21)
 
 
