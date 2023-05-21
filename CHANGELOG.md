@@ -1,3 +1,14 @@
+# [1.1.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.0.0...web-scraper-backend@1.1.0) (2023-05-21)
+
+
+### Features
+
+* add db functions for postgres and redis ([7032518](https://github.com/Prabeshpd/web-scraper-backend/commit/703251878afce5cf6cc2dca9902170788aede0d0))
+* add model for user ([0f48ab1](https://github.com/Prabeshpd/web-scraper-backend/commit/0f48ab1eb5884fb1324bf51fce3931bd8cfbf9d0))
+* add route to add user ([e9269a6](https://github.com/Prabeshpd/web-scraper-backend/commit/e9269a63bda39b2976467014024eb58d139cf684))
+* add schema validator using joi ([1d50a9a](https://github.com/Prabeshpd/web-scraper-backend/commit/1d50a9a904d04a48524ed49a1f4a58bb95fe3386))
+* add util for crypt secrets and passwords ([4cba327](https://github.com/Prabeshpd/web-scraper-backend/commit/4cba32796b2b67c461ecc83f27609d4684873a11))
+
 # 1.0.0 (2023-05-21)
 
 
