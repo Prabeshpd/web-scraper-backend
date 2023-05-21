@@ -7,7 +7,6 @@ export interface UserModel {
   email: string;
   name: string;
   password: string;
-  identification_number: string;
   created_at: string;
   is_active: boolean;
   updated_at: string;
