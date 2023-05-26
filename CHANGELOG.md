@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.4.0...web-scraper-backend@1.5.0) (2023-05-26)
+
+
+### Features
+
+* add error validation for failed upload ([af0a84b](https://github.com/Prabeshpd/web-scraper-backend/commit/af0a84b909e274d6ef651a02f3bf562718539239))
+
 # [1.4.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.3.0...web-scraper-backend@1.4.0) (2023-05-26)
 
 
