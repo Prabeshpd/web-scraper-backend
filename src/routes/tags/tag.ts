@@ -10,7 +10,7 @@ const storage = Multer.diskStorage({
     cb(null, '../files');
   },
   filename: function (req, file, cb) {
-    if(!this.filename) throw new Error('No file')
+    if (!this.filename) throw new Error('No file');
     cb(null, Date.now() + file.originalname); //Appending extension
   }
 });
