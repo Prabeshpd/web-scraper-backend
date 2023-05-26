@@ -21,6 +21,8 @@ export async function createUploadEvent(request: Request, response: Response, ne
   const userId = authorizedRequest.user.id;
   const filePath = request.file?.path || '';
 
+  if (!filePath) response.status(httpStatusCode.INTERNAL_SERVER_ERROR).json({ msg: 'File not uploaded' });
+
   sendQueueMessage('UploadedFile', JSON.stringify({ userId, filePath }))
     .then(() => response.status(httpStatusCode.OK).json({ msg: 'File Uploaded successfully' }))
     .catch((e) => next(e));
