@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.2.0...web-scraper-backend@1.3.0) (2023-05-26)
+
+
+### Features
+
+* add auth middleware ([37184db](https://github.com/Prabeshpd/web-scraper-backend/commit/37184dbabe697e9e131fa1de9bede22a06375d6a))
+* add tags upload and fetch routes ([ba3ac24](https://github.com/Prabeshpd/web-scraper-backend/commit/ba3ac2495893ca95b2b8fe0d52905a665c6fcedc))
+
 # [1.2.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.1.0...web-scraper-backend@1.2.0) (2023-05-21)
 
 
