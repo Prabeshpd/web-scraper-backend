@@ -18,7 +18,7 @@ const upload = Multer({ storage: storage });
 
 const tagRouter = Router();
 
-tagRouter.post('/', authenticate,  upload.single('tags'), tagsController.createUploadEvent);
+tagRouter.post('/', authenticate, upload.single('tags'), tagsController.createUploadEvent);
 
 tagRouter.get('/', authenticate, tagsController.fetch);
 

@@ -36,9 +36,7 @@ class Tag extends BaseModel {
   }
 
   public static async fetchByResultId(result_id: number) {
-    return this.buildQuery<TagDetail>((qb) => 
-      qb.select().from(this.table).where('results_id', result_id)
-    )
+    return this.buildQuery<TagDetail>((qb) => qb.select().from(this.table).where('results_id', result_id));
   }
 }
 
