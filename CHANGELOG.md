@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.3.0...web-scraper-backend@1.4.0) (2023-05-26)
+
+
+### Features
+
+* add search routes to fetch the results to display to users ([8cb3eab](https://github.com/Prabeshpd/web-scraper-backend/commit/8cb3eabbf1f1b9f3efbe54c73cfaf9992445810c))
+
 # [1.3.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.2.0...web-scraper-backend@1.3.0) (2023-05-26)
 
 
