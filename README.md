@@ -1,4 +1,4 @@
-# digital_wallet_server
+# web-scraper-backend
 
 # Setup
 
