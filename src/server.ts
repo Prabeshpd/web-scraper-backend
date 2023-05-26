@@ -9,6 +9,7 @@ import { disconnect } from './utils/redis';
 import { generalRouter, appRouter } from './routes/rootRouter';
 import * as errorHandlerMiddleware from './middlewares/errorHandlers';
 import { initRedisConnection, bindAppConnection, destroyConnection } from './utils/connectionManager';
+import { bindConnection } from './services/queue';
 
 const APP_PORT =
   (process.env.NODE_ENV === 'test' ? process.env.TEST_APP_PORT : process.env.APP_PORT) || process.env.PORT || '3000';
@@ -42,6 +43,7 @@ export const server = app.listen(app.get('port'), app.get('host'), () => {
 server.on('listening', async function () {
   await initRedisConnection();
   await bindAppConnection();
+  await bindConnection();
 });
 
 server.on('close', async function () {
