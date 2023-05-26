@@ -13,6 +13,6 @@ generalRouter.use(homeRouter);
 appRouter.use('/users', userRouter);
 appRouter.use('/auth', authRouter);
 appRouter.use('/tags', tagRouter);
-appRouter.use('/searchResults', searchResultsRouter)
+appRouter.use('/searchResults', searchResultsRouter);
 
 export { generalRouter, appRouter };

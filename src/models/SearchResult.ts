@@ -22,9 +22,12 @@ class Tag extends BaseModel {
 
   public static async count(user_id: number): Promise<number> {
     const [{ count }] = await this.buildQuery<{ count: number }>((qb: Knex) =>
-      qb.count('tags.id as count').from('tags')
-      .where('user_id', user_id).and.whereNotNull('results_id')
-      .innerJoin('search_results', 'tags.results_id', '=', 'search_results.id')
+      qb
+        .count('tags.id as count')
+        .from('tags')
+        .where('user_id', user_id)
+        .and.whereNotNull('results_id')
+        .innerJoin('search_results', 'tags.results_id', '=', 'search_results.id')
     );
 
     return count;
@@ -34,9 +37,14 @@ class Tag extends BaseModel {
     const { limit, offset } = paginationParams;
 
     return this.buildQuery<SearchResultDetail>((qb) =>
-      qb.select().from('tags').limit(limit).offset(offset)
-      .where('user_id', user_id).and.whereNotNull('results_id')
-      .innerJoin('search_results', 'tags.results_id', '=', 'search_results.id')
+      qb
+        .select()
+        .from('tags')
+        .limit(limit)
+        .offset(offset)
+        .where('user_id', user_id)
+        .and.whereNotNull('results_id')
+        .innerJoin('search_results', 'tags.results_id', '=', 'search_results.id')
     );
   }
 }
