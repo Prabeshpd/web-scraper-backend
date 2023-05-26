@@ -10,6 +10,7 @@ import * as validator from '../utils/validator';
  */
 export function schema(validationSchema: any) {
   return (req: Request, res: Response, next: NextFunction) => {
+
     return validator
       .validate(req.body, validationSchema)
       .then(() => next())

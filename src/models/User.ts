@@ -21,7 +21,7 @@ class User extends BaseModel {
 
   public static async insertData(data: UserPayload | UserPayload[]) {
     const user = await this.insert<UserPayload | UserPayload[]>(data);
-    console.log({ user });
+
     return listWithoutAttrs(user, ['password']);
   }
 

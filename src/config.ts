@@ -48,6 +48,16 @@ interface Configuration {
       password: string;
     };
   };
+  rabbitMQ: {
+    test: {
+      host: string;
+      port: number;
+    };
+    local: {
+      host: string;
+      port: number;
+    }
+  }
 }
 
 dotenv.config();
@@ -97,6 +107,16 @@ const config: Configuration = {
       host: process.env.REDIS_HOST || 'localhost',
       namespace: process.env.REDIS_NAMESPACE || 'webScraper',
       password: process.env.REDIS_PASSWORD || 'Admin@1234'
+    }
+  },
+  rabbitMQ: {
+    test: {
+      host: process.env.RABBIT_MQ_HOST || 'localhost',
+      port: +(process.env.RABBIT_MQ_PORT || 5672),
+    },
+    local: {
+      host: process.env.RABBIT_MQ_HOST || 'localhost',
+      port: +(process.env.RABBIT_MQ_PORT || 5672),
     }
   }
 };
