@@ -5,7 +5,7 @@ export async function up(knex: Knex): Promise<void> {
     table.increments('id').primary();
     table.integer('ad_words_count').notNullable();
     table.integer('links_count').notNullable();
-    table.integer('total_results').notNullable();
+    table.specificType('total_results', 'text').notNullable();
     table.specificType('html_page', 'text').notNullable();
   });
 }
