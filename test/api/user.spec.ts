@@ -5,7 +5,7 @@ import app, { server } from '../../src/server';
 import { getTestDatabaseConnection } from '../../src/utils/testConnection';
 
 describe('User Creation test', () => {
-  if (!process.env.CI) {
+  // if (!process.env.CI) {
     let connection: any;
     before(async () => {
       connection = getTestDatabaseConnection();
@@ -29,5 +29,5 @@ describe('User Creation test', () => {
 
       server.close();
     });
-  }
+  // }
 });

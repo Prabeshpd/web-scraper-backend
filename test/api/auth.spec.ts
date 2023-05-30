@@ -7,7 +7,7 @@ import { USER_DATA } from '../fixtures/user';
 import { getTestDatabaseConnection } from '../../src/utils/testConnection';
 
 describe('User login test', () => {
-  if (!process.env.CI) {
+  // if (!process.env.CI) {
     let connection: any;
     before(async () => {
       connection = getTestDatabaseConnection();
@@ -32,5 +32,5 @@ describe('User login test', () => {
 
       server.close();
     });
-  }
+  // }
 });
