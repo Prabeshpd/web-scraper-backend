@@ -44,8 +44,16 @@ jobs:
       - name: Build
         run: yarn build
 
-      # - name: Migrate
-      #   run: yarn migrate
+      - name: Create Env
+        run: |
+          touch .env
+          echo DB_HOST="db" >> .env
+          echo DB_PASSWORD="Admin@1234" >> .env
+          echo DB_USER="postgres" >> .env
+          echo DB_DATABASE="scraper" >> .env
+
+      - name: Migrate
+        run: yarn migrate
 
       - name: Test
         run: yarn test
