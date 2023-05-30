@@ -13,9 +13,10 @@ jobs:
     container: node:18
     services:
       # Label used to access the service container
-      postgres:
+      db:
         # Docker Hub image
-        image: postgres
+        image: postgres:14.8
+        ports: ['5432:5432']
         # Provide the password for postgres
         env:
           POSTGRES_PASSWORD: Admin@1234
