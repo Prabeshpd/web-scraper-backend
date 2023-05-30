@@ -44,8 +44,8 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Migrate
-        run: yarn migrate
+      # - name: Migrate
+      #   run: yarn migrate
 
       - name: Test
         run: yarn test
