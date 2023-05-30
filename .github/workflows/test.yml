@@ -1,4 +1,4 @@
-name: Build Application
+name: Test Application
 
 on:
   pull_request:
@@ -20,7 +20,7 @@ jobs:
         env:
           POSTGRES_PASSWORD: Admin@1234
           POSTGRES_USER: postgres
-          POSTGRES_DATABASE: scraper
+          POSTGRES_DB: scraper
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd pg_isready
