@@ -58,8 +58,8 @@ interface Configuration {
       port: number;
     };
     events: {
-      searchTags: string;
-    };
+      searchTags: string
+    } ;
   };
 }
 
@@ -84,7 +84,7 @@ const config: Configuration = {
   },
   database: {
     test: {
-      host: process.env.DB_TEST_HOST || 'localhost',
+      host: process.env.DB_TEST_HOST || 'db',
       port: (process.env.DB_TEST_PORT && +process.env.DB_TEST_PORT) || 5432,
       user: process.env.DB_TEST_USER || 'postgres',
       password: process.env.DB_TEST_PASSWORD || 'Admin@1234',
@@ -122,7 +122,7 @@ const config: Configuration = {
       port: +(process.env.RABBIT_MQ_PORT || 5672)
     },
     events: {
-      searchTags: process.env.SEARCH_TAGS || 'SEARCH_TAGS'
+      searchTags: process.env.RABBIT_MQ_EVENTS_SEARCH_TAGS || 'SEARCH_TAGS'
     }
   }
 };
