@@ -57,6 +57,9 @@ interface Configuration {
       host: string;
       port: number;
     };
+    events: {
+      searchTags: string;
+    };
   };
 }
 
@@ -117,6 +120,9 @@ const config: Configuration = {
     local: {
       host: process.env.RABBIT_MQ_HOST || 'localhost',
       port: +(process.env.RABBIT_MQ_PORT || 5672)
+    },
+    events: {
+      searchTags: process.env.SEARCH_TAGS || 'SEARCH_TAGS'
     }
   }
 };
