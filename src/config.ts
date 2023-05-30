@@ -65,6 +65,8 @@ interface Configuration {
 
 dotenv.config();
 
+console.log(process.env.DB_HOST);
+
 const config: Configuration = {
   secret: process.env.SECRET_KEY || '',
   env: process.env.ENV == 'test' ? 'test' : 'local',
@@ -122,7 +124,7 @@ const config: Configuration = {
       port: +(process.env.RABBIT_MQ_PORT || 5672)
     },
     events: {
-      searchTags: process.env.SEARCH_TAGS || 'SEARCH_TAGS'
+      searchTags: process.env.RABBIT_MQ_EVENTS_SEARCH_TAGS || 'SEARCH_TAGS'
     }
   }
 };

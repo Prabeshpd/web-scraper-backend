@@ -1,12 +1,15 @@
-require('dotenv').config({ path: __dirname + './env' });
+import dotenv from 'dotenv';
+dotenv.config({ path: '../.env' });
+console.log(__dirname);
+console.log(process.env.DB_HOST);
 
 module.exports = {
   development: {
     client: 'pg',
     connection: {
       port: process.env.DB_PORT || 5432,
-      server: process.env.DB_HOST || 'localhost',
-      database: process.env.DB_NAME || 'scraper',
+      host: process.env.DB_HOST || 'localhost',
+      database: process.env.DB_DATABASE || 'scraper',
       user: process.env.DB_USER || 'postgres',
       password: process.env.DB_PASSWORD || 'Admin@1234'
     },
