@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.5.0...web-scraper-backend@1.6.0) (2023-05-30)
+
+
+### Features
+
+* offload upload file using multer ([612c74d](https://github.com/Prabeshpd/web-scraper-backend/commit/612c74ddc010fa815df92efecfb5ca02250d02f6))
+
 # [1.5.0](https://github.com/Prabeshpd/web-scraper-backend/compare/web-scraper-backend@1.4.0...web-scraper-backend@1.5.0) (2023-05-26)
 
 
