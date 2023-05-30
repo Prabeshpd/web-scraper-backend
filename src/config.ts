@@ -91,7 +91,7 @@ const config: Configuration = {
       database: process.env.DB_TEST_DATABASE || 'scraper'
     },
     local: {
-      host: process.env.DB_HOST || 'localhost',
+      host: process.env.DB_HOST || 'db',
       port: (process.env.DB_PORT && +process.env.DB_PORT) || 5432,
       user: process.env.DB_USER || 'postgres',
       password: process.env.DB_PASSWORD || 'Admin@1234',
