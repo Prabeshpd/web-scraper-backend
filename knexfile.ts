@@ -1,11 +1,12 @@
 require('dotenv').config({ path: __dirname + './env' });
+console.log(process.env.DB_PASSWORD)
 
 module.exports = {
   development: {
     client: 'pg',
     connection: {
       port: process.env.DB_PORT || 5432,
-      server: process.env.DB_HOST || 'localhost',
+      server: process.env.DB_HOST || 'db',
       database: process.env.DB_DATABASE || 'scraper',
       user: process.env.DB_USER || 'postgres',
       password: process.env.DB_PASSWORD || 'Admin@1234'
