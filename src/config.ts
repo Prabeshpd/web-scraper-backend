@@ -58,8 +58,8 @@ interface Configuration {
       port: number;
     };
     events: {
-      searchTags: string
-    } ;
+      searchTags: string;
+    };
   };
 }
 

@@ -18,7 +18,7 @@ export async function fetch(request: Request, response: Response, next: NextFunc
 export async function insertTags(request: Request, response: Response, next: NextFunction) {
   const authorizedRequest = request as AuthorizedRequest;
   const userId = authorizedRequest.user.id;
-  const tags = request.body.tags
+  const tags = request.body.tags;
 
   tagService
     .insertTags(userId, tags)
