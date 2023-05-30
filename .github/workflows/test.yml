@@ -48,10 +48,11 @@ jobs:
         run: |
           ls
           touch .env
-          echo DB_HOST=db > .env
-          echo DB_PASSWORD=Admin@1234 > .env
-          echo DB_USER=postgres > .env
-          echo DB_DATABASE=scraper > .env
+          echo DB_HOST=db >> .env
+          echo DB_PASSWORD=Admin@1234 >> .env
+          echo DB_USER=postgres >> .env
+          echo DB_DATABASE=scraper >> .env
+          ls
           cat .env
 
       - name: Migrate
