@@ -41,9 +41,6 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
-      - name: Build
-        run: yarn build
-
       - name: Create Env
         run: |
           ls
@@ -54,6 +51,10 @@ jobs:
           echo DB_DATABASE=scraper >> .env
           ls
           cat .env
+
+      - name: Build
+        run: yarn build
+
 
       - name: Migrate
         run: yarn migrate

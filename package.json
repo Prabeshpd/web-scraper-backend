@@ -14,7 +14,7 @@
     "make": "knex --knexfile=./src/knexfile.ts migrate:make",
     "migrate": "knex --knexfile=./src/knexfile.ts migrate:latest",
     "rollback": "knex --knexfile=./src/knexfile.ts migrate:rollback",
-    "test": "TS_NODE_FILES=true mocha -r ts-node/register test/**/*.spec.ts",
+    "test": "TS_NODE_FILES=true mocha -r ts-node/register test/**/*.spec.ts --exit",
     "test:coverage": "nyc --reporter=lcov npm run test",
     "prettify": "prettier --write ."
   },
