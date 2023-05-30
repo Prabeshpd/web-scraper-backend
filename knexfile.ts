@@ -1,4 +1,6 @@
-require('dotenv').config({ path: __dirname + './env' });
+import dotenv from 'dotenv'
+dotenv.config();
+
 console.log(process.env.DB_PASSWORD)
 
 module.exports = {
