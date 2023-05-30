@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config({ path: '../.env' });
-console.log(__dirname)
+console.log(__dirname);
 console.log(process.env.DB_HOST);
 
 module.exports = {
