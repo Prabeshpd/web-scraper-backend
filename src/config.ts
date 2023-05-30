@@ -65,6 +65,8 @@ interface Configuration {
 
 dotenv.config();
 
+console.log(process.env.DB_HOST);
+
 const config: Configuration = {
   secret: process.env.SECRET_KEY || '',
   env: process.env.ENV == 'test' ? 'test' : 'local',

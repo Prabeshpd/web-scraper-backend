@@ -55,7 +55,6 @@ jobs:
       - name: Build
         run: yarn build
 
-
       - name: Migrate
         run: yarn migrate
 
