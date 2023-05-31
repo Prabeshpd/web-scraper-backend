@@ -13,7 +13,6 @@
 
 Following repositories must be setup for application which requires RabbitMQ for setup.
 
-- Parser [CSV_PARSER](https://github.com/Prabeshpd/scraper-parser)
 - Scraper [WEB_SCRAPER](https://github.com/Prabeshpd/web-scraper-script)
 
 ---
