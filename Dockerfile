@@ -4,7 +4,8 @@ FROM base AS builder
 WORKDIR /web-scraper-backend
 COPY ["package.json", "yarn.lock",  "tsconfig.json", "./"]
 RUN  yarn
-COPY ["src", "./src"]
+COPY . .
+RUN yarn migrate
 RUN yarn build
 
 FROM builder AS dependencies
